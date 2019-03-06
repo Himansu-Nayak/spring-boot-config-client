@@ -1,8 +1,11 @@
+server:
+  port: 8080
+
 spring:
   application:
-  name: config-server-client
-  profiles:
-    active: development
+  name: spring-cloud-config-client
+#  profiles:
+#    active: development
   cloud:
     config:
       uri: http://localhost:8888
@@ -10,7 +13,3 @@ spring:
 management:
   secrity:
     enabled: false
-#Active Profile - will relate to development properties file in the server. 
-#If this property is absent then,default profile will be activated which is 
-#theh property file without any environment name at the end. 
-# N.B. this is the default:

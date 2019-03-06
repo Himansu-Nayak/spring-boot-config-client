@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 class MessageRestController {
 
-    @Value("${msg:Hello world - Config Server is not working..pelase check}")
+    @Value("${client.salutation}")
     private String msg;
 
     @RequestMapping("/msg")
